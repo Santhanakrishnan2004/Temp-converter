@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Temperature Converter</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+            <div>  <h1>Santhana Krishnan Converter</h1></div>
+              
+              <div><img  class="prof" src="prof.jpeg" ></div>  
+            </div>
+        </div>
+    </nav>
+
+    <section classabout-user-poin="ts">
+        <div class="about-user-points-content card">
+            "Welcome to the Santhana Krishnan Converter – your go-to destination for effortless temperature conversions! Our elegantly designed platform empowers you to seamlessly switch between Celsius, Fahrenheit, and Kelvin scales, ensuring accurate conversions every time. With a user-friendly dropdown menu, you can swiftly choose your desired conversion type. As you input values, our interactive interface instantly generates precise results, all within a captivating card layout. Experience the seamless transition effect that enhances the aesthetics of your interaction. Whether you're a student, a professional, or simply curious about temperature conversions, the Santhana Krishnan Converter offers a convenient and visually delightful solution."
+            
+        </div>
+    </section>
+
+    <div class="home-hero__socials bounce">
+        <div class="home-hero__social">
+          <a href="https://www.linkedin.com/in/santhanakrishnan-v/" class="home-hero__social-icon-link" rel="noreferrer" target="_blank">
+            <img src="https://d33wubrfki0l68.cloudfront.net/d8e6e1e636531e28274a1b8b6d947b817f6145bd/d42d3/assets/svg/linkedin-dark.svg" alt="Santhanakrishnan Linkedin Profile" class="home-hero__social-icon">
+          </a>
+        </div>
+    
+        <div class="home-hero__social">
+          <a href="https://github.com/Santhanakrishnan2004" class="home-hero__social-icon-link" rel="noreferrer" target="_blank">
+            <img src="https://d33wubrfki0l68.cloudfront.net/38469cf88d038b6ba3322c9fcb93a8f7167df4b9/cb0b9/assets/svg/github-dark.svg" alt="Santhanakrishnan Github Profile" class="home-hero__social-icon">
+          </a>
+        </div>
+  
+        <div class="home-hero__social">
+          <a href="https://dev.to/santhanakrishnan2004" class="home-hero__social-icon-link" rel="noreferrer" target="_blank">
+            <img src="https://d33wubrfki0l68.cloudfront.net/e978c8491d93813aa00b3dc80b9abfb0d64a9086/3c187/assets/svg/book-dark.svg" alt="Santhanakrishnan DEV.to Blog Profile" class="home-hero__social-icon">
+          </a>
+        </div>
+      </div>
+   
+
+    <section class="converter-container card" id="converter  ">
+        <h2 id="conversionType">Select a conversion type from the dropdown menu.</h2>
+        <div class="dropdown">
+            
+            <div class="dropdown-content">
+                <a href="#" onclick="convert('Celsius to Fahrenheit')">Celsius to Fahrenheit</a>
+                <a href="#" onclick="convert('Fahrenheit to Celsius')">Fahrenheit to Celsius</a>
+                <a href="#" onclick="convert('Fahrenheit to Kelvin')">Fahrenheit to Kelvin</a>
+                <a href="#" onclick="convert('Kelvin to Fahrenheit')">Kelvin to Fahrenheit</a>
+                <a href="#" onclick="convert('Celsius to Kelvin')">Celsius to Kelvin</a>
+                <a href="#" onclick="convert('Kelvin to Celsius')">Kelvin to Celsius</a>
+            </div>
+        </div>
+        <div class="converter-form" >
+            <label for="inputValue">Enter Value:</label>
+            <input type="number" id="inputValue" placeholder="Enter value">
+            <button id="convertBtn" onclick="performConversion()">Convert</button>
+            <p id="result"></p>
+        </div>
+    </section>
+    <script src="script.js"></script>
+
+    <footer>
+
+        <p style="justify-content:center ;margin-left: 700px;margin-top:100px ;">© Developed by santhanakrishnan V</p>
+    </footer>
+</body>
+</html>
